@@ -1,0 +1,10 @@
+﻿CREATE DATABASE IF NOT EXISTS web_03ta;
+USE web_03ta;
+
+CREATE TABLE IF NOT EXISTS products (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  price DECIMAL(10,2) NOT NULL,
+  description TEXT,
+  category VARCHAR(100)
+);
